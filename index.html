@@ -10,11 +10,151 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>BÀI TẬP DOM</h1>
-    <h2>Bài tập 1</h2>
+    <h1 class="text-center m-3">BÀI TẬP DOM</h1>
+    <div class="container" style="max-width: 1300px;">
+        <div class="bai1 card p-4 m-4 border-dark">
+            <h2 class="mb-3">Bài 1: Tính tiền lương nhân viên</h2>
+            <h3 class="btn-danger text-center w-25 p-1 m-auto">Sơ đồ 3 khối</h3>
+            <table class="m-3">
+                <thead>
+                    <tr class="text-center">
+                        <th>INPUT</th>
+                        <th>PROGRESS</th>
+                        <th>OUTPUT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Lương 1 ngày : ?;</li>
+                                <li>Số ngày làm : ?;</li>
+                            </ul>
+
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    DOM tới button để lấy sự kiện onclick;
+                                </li>
+                                <li>
+                                    Tạo biến lương 1 ngày: luongMotNgay;
+                                </li>
+                                <li>
+                                    Tạo biến số ngày làm: soNgayLam;
+                                </li>
+                                <li>
+                                    Tạo biến tiền lương: tienLuong;
+                                </li>
+                                <li>
+                                    Tạo biến total để tính lương;
+                                </li>
+                                <li>
+                                    Tính lương: total = luongMotNgay*soNgayLam;
+                                </li>
+                                <li>
+                                    Gán giá trị total vào thẻ HTML với id="tienLuong";
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Show kết quả tiền lương;
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="">
+                <div class="form-group pl-2 pr-2 d-flex ">
+                    <input id="luongMotNgay" class="p-3 form-control w-50 mr-3 " type="number"
+                        placeholder="Nhập lương một ngày">
+                    <input id="soNgayLam" class="p-2 form-control w-50 mr-5 " type="number"
+                        placeholder="Nhập số ngày làm">
+                    <button id="tinhLuong" class="btn btn-success w-25 form-control mr-5 ">Tính lương</button>
+                    <p class="form-control w-50  text-right" id="tienLuong">VND</p>
+                </div>
+            </div>
+        </div>
+        <div class="bai2 card p-4 m-4 border-dark">
+            <h2 class="mb-3">Bài 2: Tính giá trị trung bình</h2>
+            <h3 class="btn-danger text-center w-25 p-1 m-auto">Sơ đồ 3 khối</h3>
+            <table class="m-3">
+                <thead>
+                    <tr class="text-center">
+                        <th>INPUT</th>
+                        <th>PROGRESS</th>
+                        <th>OUTPUT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>5 số thực được nhập từ người dùng;</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    DOM tới button để lấy sự kiện onclick;
+                                </li>
+                                <li>
+                                    Tạo biến và lấy giá trị 5 số thực: n1, n2, n3, n4, n5;
+                                </li>
+                                <li>
+                                    Tạo biến giá trị trung bình: trungBinh;
+                                </li>
+                                <li>
+                                    Tạo biến kết quả: ketQuaTB;
+                                </li>
+                                <li>
+                                    Tính trung bình: trungBinh = (n1 + n2 + n3 + n4 + n5) / 5 ;
+                                </li>
+                                <li>
+                                    Gán giá trị vào thẻ HTML với id="ketQuaTB";
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Show giá trị trung bình;
+                                </li>
+                            </ul>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="">
+                <div class="form-group pl-2 pr-2 d-flex ">
+                    <input id="n1" class="p-3 form-control w-50 mr-3 " type="number" placeholder="Số thứ 1">
+                    <input id="n2" class="p-3 form-control w-50 mr-3 " type="number" placeholder="Số thứ 2">
+                    <input id="n3" class="p-3 form-control w-50 mr-3 " type="number" placeholder="Số thứ 3">
+                    <input id="n4" class="p-3 form-control w-50 mr-3 " type="number" placeholder="Số thứ 4">
+                    <input id="n5" class="p-3 form-control w-50 mr-3 " type="number" placeholder="Số thứ 5">
+
+                    <button id="tinhTB" class="btn btn-success w-75 form-control mr-5 ">Tính trung bình cộng</button>
+                    <p class="form-control w-50  text-right" id="ketQuaTB"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

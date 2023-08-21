@@ -1,0 +1,79 @@
+BÀI 1: Tính tiền lương nhân viên
+INPUT:
+	Lương 1 ngày : 100.000;
+PROGRESS:
+	Tạo biến lương 1 ngày: luongMotNgay;
+	Tạo biến số ngày làm: soNgayLam;
+	Tạo biến tiền lương: tienLuong
+	Gán giá trị cho luongMotNgay = 100.000
+	Tính lương: tienLuong = luongMotNgay*soNgayLam;
+	In kết quả ra màn hình;
+OUTPUT:
+	Kết quả tienLuong;
+-------------------------------------------------------
+BÀI 2: Tính giá trị trung bình
+INPUT:
+	5 số thực được nhập từ người dùng
+PROGRESS:
+	Tạo biến cho 5 số thực: n1, n2, n3, n4, n5;
+	Tạo biến giá trị trung bình: trungBinh;
+	Lấy giá trị 5 số thực từ input;
+	Tính trung bình: trungBinh = (n1 + n2 + n3 + n4 + n5) / 5 ;
+	In kết quả ra màn hình;
+OUTPUT:
+	Giá trị trung bình của 5 số thực;
+-------------------------------------------------------
+BÀI 3: Quy đổi tiền
+INPUT:
+	1 USD = 23.500 VND;
+	Số tiền người dùng nhập vào (USD);
+PROGRESS:
+	Tạo biến tỷ giá USD: tyGiaUSD;
+	Gán giá trị tyGiaUSD = 23.500;
+	Tạo biến số tiền nhập vào: soTienUSD;
+	Tạo biến số tiền VND: soTienVND;
+	Lấy giá trị soTienUSD từ input;
+	Tính tiền : soTienVND = tyGiaUSD * soTienVND;
+	In kết quả ra màn hình;
+OUTPUT:
+	Số tiền VND sau quy đổi;
+-------------------------------------------------------
+BÀI 4: Tính diện tích, chu vi hình chữ nhật
+INPUT:
+	Chiều dài;
+	Chiều rộng;
+PROGRESS:
+	Tạo biến chieuDai;
+	Tạo biến chieuRong;
+	Lấy giá trị chiều dài từ input;
+	Lấy giá trị chiều rộng từ input;
+	+ Tính diện tích:
+		Tạo biến dienTich;
+		Tính diện tích: dienTich = chieuDai * chieuRong;
+	+ Tính chu vi:
+		Tạo biến chuVi;
+		Tính chu vi: chuVi = (chieuDai + chieuRong) *2;
+	In diện tích & chu vi ra màn hình;
+OUTPUT:
+	Kết quả diện tích & chu vi của HCN;
+-------------------------------------------------------
+BÀI 5: Tính tổng 2 ký số
+INPUT:
+	Số nguyên dương có 2 chữ số;
+PROGRESS:
+	Tạo biến số có 2 chữ số n;
+	Tạo biến số hàng chục: hangChuc;
+	Tạo biến số hàng đơn vị: donVi;
+	Lấy chữ số hàng chục: hangChuc = n / 10;
+	Lấy chữ số hàng đơn vị: donVi = n % 10;
+	Tạo biến tổng ký số: tongKySo;
+	Tính tổng ký số: tongKySo = hangChuc + donVi;
+	In kết quả tổng 2 ký số ra màn hình
+OUTPUT:
+	Kết quả tổng 2 ký số của số vừa nhập;
+-------------------------------------------------------
+	
+	
+	
+	
+
