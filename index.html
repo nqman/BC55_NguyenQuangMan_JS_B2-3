@@ -37,8 +37,8 @@
                     <tr>
                         <td>
                             <ul>
-                                <li>Lương 1 ngày : ?;</li>
-                                <li>Số ngày làm : ?;</li>
+                                <li>Lương 1 ngày;</li>
+                                <li>Số ngày làm;</li>
                             </ul>
 
                         </td>
@@ -63,7 +63,7 @@
                                     Tính lương: total = luongMotNgay*soNgayLam;
                                 </li>
                                 <li>
-                                    Gán giá trị total vào thẻ HTML với id="tienLuong";
+                                    Gán giá trị "total" vào thẻ HTML với id="tienLuong";
                                 </li>
                             </ul>
                         </td>
@@ -79,9 +79,9 @@
             </table>
             <div class="">
                 <div class="form-group pl-2 pr-2 d-flex ">
-                    <input id="luongMotNgay" class="p-3 form-control w-50 mr-3 " type="number"
+                    <input id="luongMotNgay" class="p-3 form-control w-25 mr-3 " type="number"
                         placeholder="Nhập lương một ngày">
-                    <input id="soNgayLam" class="p-2 form-control w-50 mr-5 " type="number"
+                    <input id="soNgayLam" class="p-2 form-control w-25 mr-5 " type="number"
                         placeholder="Nhập số ngày làm">
                     <button id="tinhLuong" class="btn btn-success w-25 form-control mr-5 ">Tính lương</button>
                     <p class="form-control w-50  text-right" id="tienLuong">VND</p>
@@ -124,7 +124,7 @@
                                     Tính trung bình: trungBinh = (n1 + n2 + n3 + n4 + n5) / 5 ;
                                 </li>
                                 <li>
-                                    Gán giá trị vào thẻ HTML với id="ketQuaTB";
+                                    Gán giá trị "trungBinh" vào thẻ HTML với id="ketQuaTB";
                                 </li>
                             </ul>
                         </td>
@@ -141,18 +141,214 @@
             </table>
             <div class="">
                 <div class="form-group pl-2 pr-2 d-flex ">
-                    <input id="n1" class="p-3 form-control w-50 mr-3 " type="number" placeholder="Số thứ 1">
-                    <input id="n2" class="p-3 form-control w-50 mr-3 " type="number" placeholder="Số thứ 2">
-                    <input id="n3" class="p-3 form-control w-50 mr-3 " type="number" placeholder="Số thứ 3">
-                    <input id="n4" class="p-3 form-control w-50 mr-3 " type="number" placeholder="Số thứ 4">
-                    <input id="n5" class="p-3 form-control w-50 mr-3 " type="number" placeholder="Số thứ 5">
+                    <input id="n1" class="p-3 form-control w-25 mr-3 " type="number" placeholder="Số thứ 1">
+                    <input id="n2" class="p-3 form-control w-25 mr-3 " type="number" placeholder="Số thứ 2">
+                    <input id="n3" class="p-3 form-control w-25 mr-3 " type="number" placeholder="Số thứ 3">
+                    <input id="n4" class="p-3 form-control w-25 mr-3 " type="number" placeholder="Số thứ 4">
+                    <input id="n5" class="p-3 form-control w-25 mr-3 " type="number" placeholder="Số thứ 5">
 
-                    <button id="tinhTB" class="btn btn-success w-75 form-control mr-5 ">Tính trung bình cộng</button>
-                    <p class="form-control w-50  text-right" id="ketQuaTB"></p>
+                    <button id="tinhTB" class="btn btn-success w-50 form-control mr-5 ">Tính trung bình cộng</button>
+                    <p class="form-control w-75  text-right" id="ketQuaTB"></p>
                 </div>
             </div>
         </div>
+        <div class="bai3 card p-4 m-4 border-dark">
+            <h2 class="mb-3">Bài 3: Quy đổi tiền USD >> VND</h2>
+            <h3 class="btn-danger text-center w-25 p-1 m-auto">Sơ đồ 3 khối</h3>
+            <table class="m-3">
+                <thead>
+                    <tr class="text-center">
+                        <th>INPUT</th>
+                        <th>PROGRESS</th>
+                        <th>OUTPUT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Số tiền người dùng nhập vào (USD);</li>
+                                <li>Tỷ giá 1 USD = 23.500 VND;</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    DOM tới button để lấy sự kiện onclick;
+                                </li>
+                                <li>
+                                    Tạo biến và gán tỷ giá USD: const tyGiaUSD = 23.500;
+                                </li>
+                                <li>
+                                    Tạo biến và lấy số tiền USD nhập vào: soTienUSD;
+                                </li>
+                                <li>
+                                    Tạo biến số tiền VND: soTienVND;
+                                </li>
+                                <li>
+                                    Tính tiền : soTienVND = tyGiaUSD * soTienUSD;
+                                </li>
+                                <li>
+                                    Gán giá trị "soTienVND" vào thẻ HTML với id="ketQuaVND";
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Show kết quả tiền VND;
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="">
+                <div class="form-group pl-2 pr-2 d-flex ">
+                    <input id="soTienUSD" class="p-3 form-control w-25 mr-5 " type="number"
+                        placeholder="Nhập số tiền (USD)">
+                    <button id="tinhTienUSD" class="btn btn-success w-25 form-control mr-5 ">USD >> VND</button>
+                    <p class="form-control w-50  text-right" id="ketQuaVND">VND</p>
+                </div>
+            </div>
+        </div>
+        <div class="bai4 card p-4 m-4 border-dark">
+            <h2 class="mb-3">Bài 4: Tính diện tích, chu vi hình chữ nhật</h2>
+            <h3 class="btn-danger text-center w-25 p-1 m-auto">Sơ đồ 3 khối</h3>
+            <table class="m-3">
+                <thead>
+                    <tr class="text-center">
+                        <th>INPUT</th>
+                        <th>PROGRESS</th>
+                        <th>OUTPUT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Chiều dài;</li>
+                                <li>Chiều rộng;</li>
+                            </ul>
 
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    DOM tới button để lấy sự kiện onclick;
+                                </li>
+                                <li>
+                                    Tạo biến và lấy giá trị: chieuDai;
+                                </li>
+                                <li>
+                                    Tạo biến và lấy giá trị: chieuRong;
+                                </li>
+                                <li>
+                                    Tạo biến dienTich;
+                                </li>
+                                <li>
+                                    Tạo biến chuVi;
+                                </li>
+                                <li>
+                                    Tính diện tích: dienTich = chieuDai * chieuRong;
+                                </li>
+                                <li>
+                                    Tính chu vi: chuVi = (chieuDai + chieuRong) *2;
+                                </li>
+                                <li>
+                                    Gán giá trị "dienTich" & "chuVi" vào thẻ HTML với id="ketQuaDienTich" &
+                                    id="ketQuaChuVi";
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Show kết quả diện tích & chu vi;
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="">
+                <div class="form-group pl-2 pr-2 d-flex ">
+                    <input id="chieuDai" class="p-3 form-control w-50 mr-2 " type="number"
+                        placeholder="Nhập chiều dài (m)">
+                    <input id="chieuRong" class="p-2 form-control w-50 mr-2 " type="number"
+                        placeholder="Nhập chiều rộng (m)">
+                    <button id="btnDienTich" class="btn btn-success w-50 form-control mr-2  ">Tính diện tích</button>
+                    <button id="btnChuVi" class="btn btn-success w-50 form-control mr-2 ">Tính chu vi</button>
+                    <p class="form-control w-50 mr-2  text-right" id="ketQuaDienTich">Diện tích (m2)</p>
+                    <p class="form-control w-50  text-right" id="ketQuaChuVi">Chu vi (m)</p>
+                </div>
+            </div>
+        </div>
+        <div class="bai5 card p-4 m-4 border-dark">
+            <h2 class="mb-3">Bài 5: Tính tổng 2 ký số</h2>
+            <h3 class="btn-danger text-center w-25 p-1 m-auto">Sơ đồ 3 khối</h3>
+            <table class="m-3">
+                <thead>
+                    <tr class="text-center">
+                        <th>INPUT</th>
+                        <th>PROGRESS</th>
+                        <th>OUTPUT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Số nguyên dương có 2 chữ số;</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    DOM tới button để lấy sự kiện onclick;
+                                </li>
+                                <li>
+                                    Tạo biến số nguyên dương có 2 chữ số = nguyenDuong2;
+                                </li>
+                                <li>
+                                    Tạo biến và gán giá trị hàng chục: hangChuc = nguyenDuong2 / 10;
+                                </li>
+                                <li>
+                                    Làm tròn xuống hàng chục: Math.floor(hangChuc);
+                                </li>
+                                <li>
+                                    Tạo biến và gán giá trị hàng đơn vị: donVi = nguyenDuong2 % 10;
+                                </li>
+                                <li>
+                                    Làm tròn xuống hàng đơn vị: Math.floor(hangDonVi);
+                                </li>
+                                <li>
+                                    Tạo biến và tính tổng ký số: tongKySo = hangChuc + donVi;
+                                </li>
+                                <li>
+                                    Gán giá trị "tongKySo" vào thẻ HTML với id="ketQuaTongKySo";
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    Show kết quả tổng ký số;
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="">
+                <div class="form-group pl-2 pr-2 d-flex ">
+                    <input id="nguyenDuong2" class="p-3 form-control w-50 mr-5 " type="number"
+                        placeholder="Nhập số nguyên dương">
+                    <button id="btnTinhKySo" class="btn btn-success w-25 form-control mr-5 ">Tính tổng ký số</button>
+                    <p class="form-control w-50  text-right" id="ketQuaTongKySo"></p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Optional JavaScript -->
